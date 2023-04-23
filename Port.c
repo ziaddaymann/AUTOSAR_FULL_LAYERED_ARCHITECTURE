@@ -26,7 +26,7 @@
 #endif
 
 STATIC const Port_ConfigChannel * Port_PortChannels = NULL_PTR;
-STATIC uint8 Port_Status = PORT_DIO_NOT_INITIALIZED;
+STATIC uint8 Port_Status = PORT_NOT_INITIALIZED;
 
 /************************************************************************************
 * Service Name: Port_Init
@@ -51,7 +51,7 @@ void Port_Init(const Port_ConfigType* confifPtr)
 #endif
     {
         
-  Port_Status = PORT_DIO_INITIALIZED;
+  Port_Status = PORT_INITIALIZED;
   Port_PortChannels = confifPtr->Channels; /* address of the first Channels structure --> Channels[0] */
     }
   volatile uint32 delay = 0;

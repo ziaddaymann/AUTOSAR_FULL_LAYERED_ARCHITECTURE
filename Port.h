@@ -42,11 +42,6 @@
 #define PORT_INITIALIZED (1U)
 #define PORT_NOT_INITIALIZED (0U)
 
-/*
- * Macros for Port Status
- */
-#define PORT_DIO_INITIALIZED                (1U)
-#define PORT_DIO_NOT_INITIALIZED            (0U)
 
 #include "Std_Types.h"
 
